@@ -1,0 +1,110 @@
+/* Base styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header Styling */
+header {
+  background-color: #D04722; /* Interchanged color */
+  color: #fff;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 2em;
+  margin: 0;
+  font-weight: bold;
+}
+
+header h1 a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Navigation Bar Styling */
+nav {
+  background-color: #5ED0BA; /* Interchanged color */
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background-color: #D04722; /* Interchanged color */
+  color: #000;
+  transition: 0.3s ease-in-out;
+}
+
+/* Carousel Styling */
+.carousel {
+  margin: 20px auto;
+  width: 80%;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  width: 100%;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.carousel-item {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+.carousel-item h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.carousel-item p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.container-box {
+  display: flex; /* Make child divs row-wise */
+  width: 95%; /* Take up 80% of viewport width */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+.mybox {
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  padding: 20px; /* Add some padding */
+  flex: 1; /* Make boxes equally sized */
+  margin: 5px; /* Add spacing between boxes */
+}
