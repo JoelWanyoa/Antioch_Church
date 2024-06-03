@@ -2,11 +2,17 @@ import React, { useState } from 'react';
 import './App.css';
 import { Carousel } from 'react-bootstrap';
 import "bootstrap/dist/css/bootstrap.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHandsHelping, faBullseye, faHeart} from '@fortawesome/free-solid-svg-icons';
 
 import myImage1 from './images/image1.jpg'; // Images for the carousel
 import myImage2 from './images/image2.jpg';
 import myImage3 from './images/image3.jpg';
 import myImage4 from './images/image4.jpg';
+import myImage5 from './images/cross.png';
+import myImage6 from './images/crown.png';
+import myImage7 from './images/dove.png';
+import myImage8 from './images/cup.png';
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -65,41 +71,64 @@ function App() {
         </Carousel>
       </section>
 
-      <section>
-        <div className="container">
-          <div className="container-box">
-            <div className="mybox text-center">
-              <div>
-                <h1 className="text-sm">Mission</h1>
-                <p>
-                  Serving our community with compassion, guided by the teachings of Jesus Christ.
-                </p>
-              </div>
-            </div>
-            <div className="mybox text-center">
-              <div>
-                <h1>Vision Statement</h1>
-                <p>
-                  Our vision is to be a beacon of hope and compassion in our community, offering support, service, and a sense of belonging to all. We envision a church transformed by the Holy Spirit, actively engaging in outreach and missions to spread the Gospel message far and wide.
-                </p>
-              </div>
-            </div>
-            <div className="mybox">
-              <div>
-                <h1 className="text-center">Our Values</h1>
-                <ul className="text-left">
-                  <li>Love</li>
-                  <li>Faith</li>
-                  <li>Hope</li>
-                  <li>Compassion</li>
-                  <li>Stewardship</li>
-                  <li>Worship</li>
-                </ul>
-              </div>
-            </div>
-          </div>
+<section className='myStatements'>
+  <div className="container">
+    <div className="container-box">
+      <div className="mybox text-center">
+        <div>
+          <FontAwesomeIcon icon={faHandsHelping} size="2x" className="icon" />
+          <h1 className="text-sm">Mission</h1>
+          <p>
+            Serving our community with compassion, guided by the teachings of Jesus Christ.
+          </p>
         </div>
-      </section>
+      </div>
+      <div className="mybox text-center">
+        <div>
+          <FontAwesomeIcon icon={faBullseye} size="2x" className="icon" />
+          <h1>Vision Statement</h1>
+          <p>
+            Our vision is to be a beacon of hope and compassion in our community, offering support, service, and a sense of belonging to all. We envision a church transformed by the Holy Spirit, actively engaging in outreach and missions to spread the Gospel message far and wide.
+          </p>
+        </div>
+      </div>
+      <div className="mybox">
+        <div>
+          <center><FontAwesomeIcon icon={faHeart} size="2x" className="icon"/></center>
+          <h1 className="text-center">Our Values</h1>
+          <ul className="text-left">
+            <li>Love</li>
+            <li>Faith</li>
+            <li>Hope</li>
+            <li>Compassion</li>
+            <li>Stewardship</li>
+            <li>Worship</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section className='myStatements'>
+<div className='container mt-3'>
+      <div className='row justify-content-center align-items-center'>
+        <div className='col-md-3'>
+          <img src={myImage5} alt='image 1' width={100} height={100} className='img-fluid rounded-circle image-frame'/>
+          <p>Lorem ipsum di</p>
+        </div>
+        <div className='col-md-3'>
+          <img src={myImage6} alt='image 2' width={100} height={100} className='img-fluid rounded-circle image-frame'/>
+        </div>
+        <div className='col-md-3'>
+          <img src={myImage7} alt='image 3' width={100} height={100} className='img-fluid rounded-circle image-frame'/>
+        </div>
+        <div className='col-md-3'>
+          <img src={myImage8} alt='image 4' width={100} height={100} className='img-fluid rounded-circle image-frame'/>
+        </div>
+      </div>
+    </div>
+</section>
+
     </div>
   );
 }
