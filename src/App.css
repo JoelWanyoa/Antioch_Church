@@ -2,6 +2,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
 }
 
 /* Header Styling */
@@ -12,6 +13,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  position: relative;
+  z-index: 1;
 }
 
 header h1 {
@@ -31,6 +35,7 @@ nav {
   padding: 10px;
   display: flex;
   justify-content: space-around;
+  flex-wrap: nowrap; /* Allow wrapping for smaller screens */
 }
 
 nav a {
@@ -46,10 +51,28 @@ nav a:hover {
   transition: 0.3s ease-in-out;
 }
 
+/* Responsive Navigation Menu */
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #5ED0BA;
+  width: 50%;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.nav-menu.open {
+  max-height: 300px; /* Adjust according to the number of items */
+}
+
+.nav-menu a {
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+}
+
 /* Carousel Styling */
 .carousel {
-  margin: 20px auto;
-  width: 80%;
   overflow: hidden;
 }
 
@@ -58,24 +81,14 @@ nav a:hover {
   width: 100%;
 }
 
-@keyframes slide {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
+/* Carousel Item Styling */
 .carousel-item {
-  width: 25%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: #fff;
   text-align: center;
-  padding: 10px;
 }
 
 .carousel-item h2 {
@@ -90,21 +103,121 @@ nav a:hover {
 
 .carousel-item img {
   width: 100%;
-  height: 200px;
+  height: 60vh; /* Adjusted for banner style */
   object-fit: cover;
   margin-bottom: 10px;
 }
 
+/* Container Box Styling */
 .container-box {
   display: flex; /* Make child divs row-wise */
-  width: 95%; /* Take up 80% of viewport width */
+  width: auto; /* Take up 90% of viewport width */
   margin: 0 auto; /* Center the container horizontally */
+  justify-content: space-around;
+  align-items: first baseline;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+/* Caption styling*/
+
+.caption-overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* Black color with 50% opacity */
+  padding: 10px; /* Adjust padding as needed */
+  border-radius: 5px; /* Add rounded corners */
+  color: #fff; /* Text color */
+}
+
+.caption-title {
+  font-size: 1.5em; /* Adjust title font size */
+  margin-bottom: 10px; /* Add spacing between title and text */
+}
+
+.caption-text {
+  font-size: 14px; /* Adjust text font size */
+  line-height: 1.5; /* Increase line height for better readability */
 }
 
 .mybox {
   border-radius: 10px; /* Rounded corners */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
   padding: 20px; /* Add some padding */
-  flex: 1; /* Make boxes equally sized */
-  margin: 5px; /* Add spacing between boxes */
+  flex: 1 1 30%; /* Make boxes equally sized and flexible */
+  margin: 10px; /* Add spacing between boxes */
+}
+
+section {
+  padding: 0;
+  margin: 0;
+  width: auto;
+}
+
+section.myStatements {
+  height: auto;
+}
+
+/* Hamburger Menu Styling */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.bar {
+  height: 3px;
+  width: 25px;
+  background-color: #fff;
+  margin: 4px 0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 90px;
+    right: 0;
+    width: 100%;
+    max-height: 0;
+    z-index: 999;
+    transition: max-height 0.3s ease-in-out; /* Smooth transition */
+  }
+
+  .nav-menu.open {
+    display: flex;
+  }
+
+  nav a {
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .carousel-item img {
+    height: 40vh; /* Adjust height for smaller screens */
+  }
+
+  .mybox {
+    flex: 1 1 45%; /* Adjust flex-basis for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .mybox {
+    flex: 1 1 100%; /* Full width for very small screens */
+  }
+
+  .carousel-item h2 {
+    font-size: 1.2em; /* Adjust font size for smaller screens */
+  }
+
+  .carousel-item p {
+    font-size: 12px; /* Adjust font size for smaller screens */
+  }
 }
