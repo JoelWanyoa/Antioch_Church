@@ -1,8 +1,10 @@
 /* Base styles */
+@import url(//fonts.googleapis.com/css?family=Montserrat:300,400,500);
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* Header Styling */
@@ -15,7 +17,7 @@ header {
   align-items: center;
   flex-wrap: wrap; /* Allow wrapping for smaller screens */
   position: relative;
-  z-index: 1;
+  z-index: 999;
 }
 
 header h1 {
@@ -108,6 +110,11 @@ nav a:hover {
   margin-bottom: 10px;
 }
 
+.text-small
+{
+  font-size: 0.8em;
+}
+
 /* Container Box Styling */
 .container-box {
   display: flex; /* Make child divs row-wise */
@@ -137,12 +144,20 @@ nav a:hover {
   line-height: 1.5; /* Increase line height for better readability */
 }
 
-.mybox {
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
-  padding: 20px; /* Add some padding */
-  flex: 1 1 30%; /* Make boxes equally sized and flexible */
-  margin: 10px; /* Add spacing between boxes */
+.container-box :hover
+{
+  background-color: #5ED0BA;
+  border-radius: 5px;
+}
+
+.border-blue
+{
+  border: 2px solid #5ED0BA;
+  border-radius: 10px;
+}
+
+.border-blue h3{
+  margin: 1.5vh;
 }
 
 section {
@@ -156,6 +171,191 @@ section.myStatements {
   padding: 25px;
 }
 
+/* Justify text */
+.text-justify {
+  text-align: justify;
+}
+
+.border-lightgray {
+  border: 1px solid #5ED0BA;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  transition: background-image 0.5s ease; /* Transition for background-image property */
+}
+
+.border-lightgray:hover {
+  background-image: linear-gradient(to bottom, #f8f9fa, #5ED0BA); /* Gradient with fading color */
+}
+
+
+/* Services Section Styling */
+
+.service-11 {
+	color: #8d97ad;
+  font-weight: 300;
+}
+
+.service-11 h1, .service-11 h2, .service-11 h3, .service-11 h4, .service-11 h5, .service-11 h6 {
+  color: #3e4555;
+}
+
+.service-11 .font-weight-medium {
+	font-weight: 500;
+}
+
+.service-11 .bg-light {
+    background-color: #f4f8fa !important;
+}
+
+.service-11 .subtitle {
+    color: #8d97ad;
+    line-height: 24px;
+}
+
+.service-11 .card.card-shadow {
+    -webkit-box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
+    box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
+}
+
+.service-11 .wrap-service11-box {
+  margin-top: 60px;
+}
+
+.service-11 .wrap-service11-box .icon-space {
+  margin: -70px 0 20px;
+}
+
+.service-11 .wrap-service11-box .icon-space .icon-round {
+  font-size: 45px;
+  color: #ffffff;
+}
+
+.service-11 .bg-success-gradiant {
+    background: #2cdd9b;
+    background: -webkit-linear-gradient(legacy-direction(to right), #2cdd9b 0%, #1dc8cc 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#2cdd9b), to(#1dc8cc));
+    background: -webkit-linear-gradient(left, #2cdd9b 0%, #1dc8cc 100%);
+    background: -o-linear-gradient(left, #2cdd9b 0%, #1dc8cc 100%);
+    background: linear-gradient(to right, #2cdd9b 0%, #1dc8cc 100%);
+}
+
+.service-11 .icon-round {
+		width: 80px;
+    line-height: 80px;
+}
+
+.service-11 .btn-success-gradiant {
+		background: #2cdd9b;
+    background: -webkit-linear-gradient(legacy-direction(to right), #2cdd9b 0%, #1dc8cc 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#2cdd9b), to(#1dc8cc));
+    background: -webkit-linear-gradient(left, #2cdd9b 0%, #1dc8cc 100%);
+    background: -o-linear-gradient(left, #2cdd9b 0%, #1dc8cc 100%);
+    background: linear-gradient(to right, #2cdd9b 0%, #1dc8cc 100%);
+}
+
+.service-11 .btn-success-gradiant:hover {
+		background: #1dc8cc;
+    background: -webkit-linear-gradient(legacy-direction(to right), #1dc8cc 0%, #2cdd9b 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#1dc8cc), to(#2cdd9b));
+    background: -webkit-linear-gradient(left, #1dc8cc 0%, #2cdd9b 100%);
+    background: -o-linear-gradient(left, #1dc8cc 0%, #2cdd9b 100%);
+    background: linear-gradient(to right, #1dc8cc 0%, #2cdd9b 100%);	
+}
+
+.service-11 .btn-md {
+    padding: 15px 45px;
+    font-size: 16px;
+}
+
+/* Schedule Styling */
+
+.schedule-warp{
+  padding-right:20px;
+  padding-left:20px;
+  padding: 20px 30px;
+  border: solid 1px #ddd;
+  background-color: #f5f5f5;
+  -webkit-transition: all 0.7s cubic-bezier(0.11, 0.6, 0.24, 0.89);
+  transition: all 0.7s cubic-bezier(0.11, 0.6, 0.24, 0.89);
+}
+.schedule{
+  background-color:#fff;
+}
+.schedule-warp:hover {
+  box-shadow: 0 6px 20px rgba(0,0,0,.07);
+  border: solid 1px rgba(40, 145, 145, 0.97);
+}
+.schedule{
+  padding:100px 0px;
+  background-color: #ecedf0;
+   font-family: 'Titillium Web';
+}
+.schedule-tag{
+  color:#fff;
+  background-color: #5ED0BA;
+  padding:3px 8px;
+  margin-right: 15px;
+  width: 90px;
+  font-family: 'Titillium Web';
+  text-align: center;
+}
+.schedule-header span{
+  display: inline-block;
+  margin-right:25px;
+}
+.schedule-header{
+  margin-bottom:80px;
+}
+.schedule-card{
+  position: relative;
+  margin-bottom: 0.7em;
+}
+.schedule-card:hover .insidebox {
+  transform: scale(1.033);
+  /* box-shadow: 0 5px 18px rgba(0, 0, 0, 0.1); */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.schedule-card:hover:after {
+  background: #5ED0BA;
+  width: 25px;
+}
+.schedule-card:after {
+  height: 2px;
+  width: 22px;
+  background: #ddd;
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -22px;
+  transition: all 0.3s ease-in;
+}
+.insidebox { 
+  box-shadow: 0 0px 5px rgba(0,0,0,.07);
+  background: #ffffff;
+  width: 100%;
+  height: auto;
+  display: flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: -o-flex;
+  -webkit-align-items: center;
+  align-items: center;
+  padding: 10px 20px;
+  color: #6164B2;
+  transition: all 0.2s ease-in;
+/*    justify-content: center;*/
+}
+
+.day-one{
+  margin-bottom:50px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #6164B2;    
+  }
+
+
 /* Hamburger Menu Styling */
 .hamburger {
   display: none;
@@ -165,10 +365,10 @@ section.myStatements {
 }
 
 .bar {
-  height: 3px;
+  height: 2px;
   width: 25px;
   background-color: #fff;
-  margin: 4px 0;
+  margin: 3px 0;
 }
 
 /* Images Styling*/
@@ -179,7 +379,36 @@ section.myStatements {
   box-shadow: 0 4px 100px rgba(0, 0, 0, 0.1); /* Optional: for shadow effect */
 }
 
+.mybox {
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  padding: 20px; /* Add some padding */
+  flex: 1 1 30%; /* Make boxes equally sized and flexible */
+  margin: 10px; /* Add spacing between boxes */
+}
+
+.mypillars {
+  padding: 10px; /* Add some padding */
+  flex: 1 1 25%; /* Make boxes equally sized and flexible */
+  margin: 2px; /* Add spacing between boxes */
+}
+
+.mybox1 {
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Add some padding */
+  flex: 1 1 30%; /* Make boxes equally sized and flexible */
+  margin: 10px; /* Add spacing between boxes */
+}
+
 /* Media Queries for Responsiveness */
+
+@media (max-width: 991.98px) {
+  .mypillars {
+    flex: 1 1 50%; /* 2 columns on medium screens */
+  }
+}
+
+
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
@@ -190,10 +419,10 @@ section.myStatements {
     flex-direction: column;
     width: 100%;
     position: absolute;
-    top: 90px;
+    top: 80px;
     right: 0;
     width: 100%;
-    max-height: 0;
+    min-height: 42vh;
     z-index: 999;
     transition: max-height 0.3s ease-in-out; /* Smooth transition */
   }
@@ -215,11 +444,19 @@ section.myStatements {
   .mybox {
     flex: 1 1 45%; /* Adjust flex-basis for smaller screens */
   }
+
+  .mypillars {
+    flex: 1 1 50%; /* Adjust flex-basis for smaller screens */
+  }
 }
 
 @media (max-width: 480px) {
   .mybox {
     flex: 1 1 100%; /* Full width for very small screens */
+  }
+
+  .mypillars {
+    flex: 1 1 100%; /* Adjust flex-basis for smaller screens */
   }
 
   .carousel-item h2 {
