@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'; // Import ReactDOM from 'react-dom'
 import './index.css';
 import App from './App';
 import About from './About';
+import Ministries from './Ministries';
 import ErrorPage from './ErrorPage';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
