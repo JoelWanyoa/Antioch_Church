@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom'; // Import ReactDOM from 'react-dom'
 import './index.css';
+import './Animation.css';
 import App from './App';
 import About from './About';
 import Ministries from './Ministries';
+import Sermons from './Sermons';
 import ErrorPage from './ErrorPage';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -12,6 +14,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import Events from './Events';
 
 const router = createBrowserRouter([
   {
@@ -26,7 +29,16 @@ const router = createBrowserRouter([
   {
     path: '/ministries',
     element: <Ministries />
+  },
+  {
+    path: '/sermons',
+    element: <Sermons />
   }
+  ,
+  {
+    path: '/events',
+    element: <Events />
+  },
 ])
 
 ReactDOM.render( // Use ReactDOM.render instead of ReactDOM.createRoot

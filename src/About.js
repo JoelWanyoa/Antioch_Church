@@ -27,7 +27,7 @@ return (
                <p className="lead">This is a Church with a difference.<br />We worship in spirit and in truth. </p>
             </div>
             <div className='col-md-3 d-flex justify-content-center align-items-center'>
-                <img src={Logo} style={{
+                <img src={Logo} className='p-4' style={{
                     width: '150px',
                     textAlign: 'center',
                     margin: '20px'

@@ -20,8 +20,10 @@ export default function Header() {
                 <nav className={`nav-menu ${menuOpen ? 'open' : ''}`}>
                     <Link to="/">Home</Link>
                     <Link to="/about">About Us</Link>
-                    <Link to="#">Ministries</Link>
-                    <Link to="#">Events</Link>
+                    <Link to="/ministries">Ministries</Link>
+                    <Link to="#">Leadership</Link>
+                    <Link to="/sermons">Sermons</Link>
+                    <Link to="/events">Events</Link>
                     <Link to="#">Contacts</Link>
                 </nav>
             </header>

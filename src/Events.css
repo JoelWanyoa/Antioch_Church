@@ -1,0 +1,113 @@
+
+.card{
+    background-color: #ffffff;
+    border-radius: 20px
+}
+#heading{
+    font-size: 18px
+}
+.darkWhite{
+    color: #eaebf9
+}
+.div1{
+    background-color: #6368bd;
+    color: #c4c7e4;
+    border-radius: 10px 10px 0px 0px
+}
+#desc{
+    color: #b8babb;
+    font-weight:500
+}
+#circl{
+    background-color: #f1f1f1;
+    height: 50%;
+}
+.btn{
+    background-color: #f05c5d;
+    border-radius: 10px;
+    font-size: 80%
+}
+a, a:hover{
+    text-decoration: none;
+    color: #77cbc5;
+    font-weight: bold
+}
+.sp1{
+    background-color: #37b6b2
+}
+.fa{
+    color: white;
+    font-size: 18px;
+    font-weight: bold
+}
+.btn:focus{
+    outline: none;
+    box-shadow: none
+}
+*:focus{
+    outline: none
+}
+
+.bg-fundraiser {
+    background-color: #2c3e50; /* Dark Blue for Annual Church Fundraiser */
+}
+
+.bg-vacation {
+    background-color: #1abc9c; /* Turquoise for Vacation Bible School */
+}
+
+.bg-retreat {
+    background-color: #e74c3c; /* Bright Red for Youth Retreat 2024 */
+}
+
+.bg-community {
+    background-color: #27ae60; /* Green for Community Outreach Event */
+}
+
+.bg-prayer {
+    background-color: #8e44ad; /* Purple for Prayer and Worship Night */
+}
+
+.bg-picnic {
+    background-color: #3498db; /* Blue for Church Picnic */
+}
+
+.bg-food {
+    background-color: #e67e22; /* Orange for Food Drive */
+}
+
+.bg-default {
+    background-color: #34495e; /* Dark Gray as Default color */
+}
+
+/* Additional styling for darkWhite text and other elements */
+.darkWhite {
+    color: #f8f9fa; /* Light color for text */
+}
+
+/* Styling for additional elements */
+#heading {
+    font-size: 1.5rem;
+}
+
+#desc {
+    font-size: 1rem;
+}
+
+.sp1 {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.btn {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+    #circl{
+        background-color: #f1f1f1;
+        height: 60%;
+        width: 40%;
+    }    
+}

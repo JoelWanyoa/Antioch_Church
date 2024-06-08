@@ -15,7 +15,7 @@ export default function Footer() {
                             </div>
                             <div className="col-md-6">
                             <div className="content">
-                            <div className="input-group">
+                            <div className="input-group shake-horizontal">
                                 <input type="email" className="form-control" placeholder="Enter your email" />
                                 <span className="input-group-btn">
                                 <button className="btn btn-danger" type="submit">Subscribe Now</button>

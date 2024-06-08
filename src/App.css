@@ -64,7 +64,7 @@ nav a:hover {
 }
 
 .nav-menu.open {
-  max-height: 300px; /* Adjust according to the number of items */
+  max-height: 650px; /* Adjust according to the number of items */
 }
 
 .nav-menu a {
@@ -176,17 +176,22 @@ section.myStatements {
   text-align: justify;
 }
 
-.border-lightgray {
+.border-lightblue {
   border: 1px solid #5ED0BA;
   border-radius: 10px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   height: 100%;
-  transition: background-image 0.5s ease; /* Transition for background-image property */
+  transition: top 200ms ease-in-out, border 200ms ease-in-out, background-image 200ms ease-in-out; /* Define all transitions in one line */
 }
 
-.border-lightgray:hover {
+.border-lightblue:hover {
+  border: 1px solid #D04722;
   background-image: linear-gradient(to bottom, #f8f9fa, #5ED0BA); /* Gradient with fading color */
+  position: relative;
+  top: -10px;
 }
+
+
 
 
 /* Services Section Styling */

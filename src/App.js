@@ -95,21 +95,21 @@ return (
             <h1 className='text-center my-3'>Our Pillars</h1>
             <div className='row p-3'>
                <div className='col-md-3 col-sm-6 my-2'>
-                  <div className='border-lightgray d-flex flex-column align-items-center justify-content-center p-3'>
+                  <div className='border-lightblue d-flex flex-column align-items-center justify-content-center p-3'>
                      <img src={myImage5} alt='image 1' width={100} height={100} className='img-fluid rounded-circle image-frame' />
                      <h3>Truth</h3>
                      <p className='mt-3 text-justify'> At Antioch Grace Ministries, truth is the cornerstone of our faith and foundation of our lives. We uphold the absolute truth of the Holy Scriptures, finding clarity, direction, and purpose through God's Word. Truth guides our actions, informs decisions, and shapes our character. In a world filled with uncertainty and misinformation, we strive to be a beacon of honesty and integrity, standing firm in our convictions and encouraging others to embrace the truth. By living out this pillar, we reflect God's unwavering and eternal truth, fostering a community rooted in authenticity, transparency, and faithfulness.</p>
                   </div>
                </div>
                <div className='col-md-3 col-sm-6 my-2'>
-                  <div className='border-lightgray d-flex flex-column align-items-center justify-content-center p-3'>
+                  <div className='border-lightblue d-flex flex-column align-items-center justify-content-center p-3'>
                      <img src={myImage6} alt='image 2' width={100} height={100} className='img-fluid rounded-circle image-frame'/>
                      <h3>Royalty</h3>
                      <p className='mt-3 text-justify'> We embrace royalty as a pillar, reflecting our identity as children of the King of Kings. We believe that through Christ, we are heirs to a divine heritage, called to live with dignity, honor, and purpose. This royal identity compels us to carry ourselves with grace and humility, serving others with the love and authority bestowed upon us by our Heavenly Father. By acknowledging our royal status, we strive to cultivate a community that upholds the values of the Kingdom of God—justice, mercy, and love—empowering each member to walk in their God-given authority and inheritance.</p>
                   </div>
                </div>
                <div className='col-md-3 col-sm-6 my-2'>
-                  <div className='border-lightgray d-flex flex-column align-items-center justify-content-center p-3'>
+                  <div className='border-lightblue d-flex flex-column align-items-center justify-content-center p-3'>
                      <img src={myImage7} alt='image 3' width={100} height={100} className='img-fluid rounded-circle image-frame'/>
                      <h3>Holiness</h3>
                      <p className='mt-3 text-justify'> 
@@ -118,7 +118,7 @@ return (
                   </div>
                </div>
                <div className='col-md-3 col-sm-6 my-2'>
-                  <div className='border-lightgray d-flex flex-column align-items-center justify-content-center p-3'>
+                  <div className='border-lightblue d-flex flex-column align-items-center justify-content-center p-3'>
                      <img src={myImage8} alt='image 4' width={100} height={100} className='img-fluid rounded-circle image-frame'/>
                      <h3>Community</h3>
                      <p className='mt-3 text-justify'> Community is a foundational pillar, reflecting our dedication to fostering strong, supportive relationships among our members. We believe that true community is built on love, mutual respect, and shared faith. By actively engaging in each other's lives, offering support, and working together towards common goals, we create a nurturing environment where everyone can thrive. Our commitment to community ensures that no one stands alone, and together, we can grow spiritually, emotionally, and socially. We aim to exemplify the unity and compassion that Christ taught us, building a vibrant, interconnected church family.</p>
@@ -131,7 +131,7 @@ return (
    <section>
       {/* <!-- Services Section --> */}
       <div className="bg-light py-5 service-11">
-         <h1 className='text-center text-sm'>What we pride ourselves in</h1>
+         <h1 className='text-center text-sm tracking-in-contract'>What we pride ourselves in</h1>
          <div className="container">
             {/* <!-- Row  --> */}
             <div className="row">
@@ -281,42 +281,7 @@ return (
          </div>
       </div>
    </section>
-   <section>
-      {/* <!-- About Us Section --> */}
-      <div className='container my-5'>
-         <div className='row'>
-            <div className='col-md-9'>
-               <h1>Who we are</h1>
-               <p>
-                  Lorem ipsum <br />
-                  Lorem ipsum <br />
-                  Lorem ipsum <br />
-                  Lorem ipsum <br />
-                  Lorem ipsum <br />
-                  Lorem ipsum <br />
-                  Lorem ipsum <br />
-                  Lorem ipsum <br />
-               </p>
-            </div>
-            <div className='col-md-3'>
-               <div className='container d-flex flex-column align-items-center justify-content-center'  style={{
-               backgroundImage: `url(${backgroundImage})`,
-               backgroundSize: 'cover',
-               backgroundRepeat: 'no-repeat',
-               height: '100%',
-               width: '100%'
-               }}>
-               <div className='inner-container p-5 bg-white' style={{
-               width: '80%',
-               height: '80%'
-               }}>
-               Over
-            </div>
-         </div>
-      </div>
-</div>
-</div>
-</section>
+   
 
 <Footer />
 </div>
